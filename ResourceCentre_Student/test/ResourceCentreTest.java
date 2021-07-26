@@ -72,7 +72,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testRetrieveAllCamcorder() {
 		// Test if Item list is not null but empty, so that can add a new item
-		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		assertNotNull("Test if there is valid Camcorder arraylist to retrieve from", camcorderList);
 		
 		//test if the list of camcorders retrieved from the SourceCentre is empty
 				String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
@@ -96,7 +96,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testRetrieveAllChromebook() {
 		// Test if Item list is not null but empty, so that can add a new item
-		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		assertNotNull("Test if there is valid Chromebook arraylist to retrieve from", chromebookList);
 		
 		//test if the list of Chromebooks retrieved from the SourceCentre is empty
 				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
@@ -172,7 +172,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoReturnCamcorder() {
-		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		assertNotNull("Test if there is valid Camcorder arraylist to return to", camcorderList);
 		ResourceCentre.addCamcorder(camcorderList, cc1);
 		
 		//error
@@ -193,7 +193,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testDoReturnChromebook() {
 		//boundary
-		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		assertNotNull("Test if there is valid Chromebook arraylist to return to", chromebookList);
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		
 		//error
