@@ -31,7 +31,7 @@ public class ResourceCentreTest {
 		chromebookList= new ArrayList<Chromebook>();
 	}
 
-	
+	//
 	@Test
 	public void testAddCamcorder() {
 		// Item list is not null, so that can add a new item
@@ -64,9 +64,11 @@ public class ResourceCentreTest {
 		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that Chromeboook arraylist size is 2?", 2, chromebookList.size());
 		// write your code here
-		
 	}
+
 	
+		
+//>>>>>>> branch 'master' of https://github.com/20039761-Wenzhe/ResourceCentre_Student.git
 	@Test
 	public void testRetrieveAllCamcorder() {
 		// Test if Item list is not null but empty, so that can add a new item
@@ -113,7 +115,8 @@ public class ResourceCentreTest {
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
 	
 		assertEquals("Check that ViewAllchromebookList", testOutput, allChromebook);
-		// write your code here
+		// write your code here	
+		
 	}
 
 	@Test
@@ -139,8 +142,7 @@ public class ResourceCentreTest {
 		//error condition
 		ok = ResourceCentre.doLoanCamcorder(camcorderList, "CC0013", "8-8-2020");
 		assertFalse("Test that non-existing item is NOT ok to loan", ok);
-		// write your code here
-		
+		// write your code here	
 	}
 	
 	@Test
@@ -186,8 +188,7 @@ public class ResourceCentreTest {
 		//error
 		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0013");
 		assertFalse("Check that non-exisitng chromebook CC0013 is returned - false", isReturned);
-		// write your code here
-		
+		// write your code here	
 	}
 	@Test
 	public void testDoReturnChromebook() {
